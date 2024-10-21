@@ -2,7 +2,7 @@ clear all;
 close all;
 clc
 
-[Horizontal, Vertical, Optional] = msiread("AIR6488_B42D_dlMacro_H0_V0_3600_PWR.msi");
+[Horizontal, Vertical, Optional] = msiread("80010672_1855_x_co_m45_00t.msi");
 fc = Optional.frequency;
 
 
@@ -37,6 +37,6 @@ Z = get(hSurface, 'ZData');
 
 %% Export the 3D mesh to STL format
 % You will need the surf2stl function, which you can get from MATLAB's File Exchange
-surf2stl('AIR6488_B42D_dlMacro_H0_V0_3600_PWR.stl', X, Y, Z);
+surf2stl('80010672_1855_x_co_m45_00t.stl', X, Y, Z);
 
-disp('STL file successfully generated: AIR6488_B42D_dlMacro_H0_V0_3600_PWR.stl');
+disp('STL file successfully generated: 80010672_1855_x_co_m45_00t.stl');
